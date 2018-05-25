@@ -6,23 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-    <!--<div id="root"></div>-->
-    <h1 class="nombre">Caesar Cipher</h1>
-    <center><p>Método de codificación más conocido y simple cambian las posiciones del alfabeto</p></center> 
-    <div>
-      <p><strong>Ingresa el texto:</strong></p>
-      <textarea name="comentarios" rows="10" cols="50">Ingresa el texto</textarea>
-    </div>
-    
-    <div>
-      <p><strong>Resultado del texto:</strong></p>
-      <textarea name="comentarios" rows="10" cols="50"></textarea>
-    </div>
-    
+     <section>
+    <div id="root"></div>
+        <h1 class="nombre">Caesar Cipher</h1>
+        <center><p>Método de codificación más conocido y simple que cambia las posiciones del alfabeto</p></center> 
+        <br> 
+    <form action="" name="formulario" method="get">
+      <!--Área de texto: Ingreso de datos--> 
+      <label>Ingresa el texto:</label><br>
+      <input type="text" name="encriptar" id="encriptar" placeholder="Ingresa tu texto">
+      <br>
+      <label> Ingresa el texto:</label><br>
+      <input type="text" name="descencriptar" id="descencriptar" placeholder="Ingresa tu texto">
+      <br>
+      <!--Botones-->
+      <label>N° de saltos</label><br>
+      <input type="number" id="saltos" value="0">
+      <br>
+      <input type="submit" id="btn1" value="Encriptar"><br>
+      <input type="submit" id="btn2" value="Descencriptar"><br>
+      <input type="reset"  id="btn3" value="Limpiar"><br>
       
-    <script src="cipher.js"></script>
+     <!--Área de texto: salida de datos-->
+      <label>Resultado del texto:</label><br>
+      <input type="text" name="resultado" id="resultado" placeholder="Resultado">
+    </form>
+   
     <script src="index.js"></script>
-  </section>
+    <script src="cipher.js"></script>
+     </section>
   </body>
 </html>
