@@ -1,5 +1,11 @@
+body{
+    background-color: #f5f5ef;
+  }
+
 .nombre{
-    text-align: center
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 select {
