@@ -8,10 +8,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-select {
-    width: 100px;
-}
-section {
+    section{
     margin: auto;
     width: 90%;
     padding: 20px;

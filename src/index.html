@@ -12,21 +12,22 @@
         <h1 class="nombre">Caesar Cipher</h1>
         <center><p>Método de codificación más conocido y simple que cambia las posiciones del alfabeto</p></center> 
         <br> 
-    <form action="" name="formulario" method="get">
+    <form action="" name="formulario" method="get" onsubmit="return validar ();">
       <!--Área de texto: Ingreso de datos--> 
-      <label>Ingresa el texto:</label><br>
+      <labelt>Texto a encriptar:</label><br>
       <input type="text" name="encriptar" id="encriptar" placeholder="Ingresa tu texto">
       <br>
-      <label> Ingresa el texto:</label><br>
+      <label>Texto a descencriptar:</label><br>
       <input type="text" name="descencriptar" id="descencriptar" placeholder="Ingresa tu texto">
       <br>
+      
       <!--Botones-->
       <label>N° de saltos</label><br>
       <input type="number" id="saltos" value="0">
       <br>
-      <input type="submit" id="btn1" value="Encriptar"><br>
-      <input type="submit" id="btn2" value="Descencriptar"><br>
-      <input type="reset"  id="btn3" value="Limpiar"><br>
+      <input type="submit" id="btnEnc" value="Encriptar"><br>
+      <input type="submit" id="btnDes" value="Descencriptar"><br>
+      <input type="reset"  id="btnLim" value="Limpiar"><br>
       
       <!--Área de texto: salida de datos-->
       <label>Resultado del texto:</label><br>
