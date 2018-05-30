@@ -1,17 +1,20 @@
 body{
     background-color: #f5f5ef;
   }
+p 
+{ font-size: 20px;
+  font-family: 'Courier New', Courier, monospace
 
+}
 .nombre{
     text-align: center;
-    font-size: 35px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace
 }
-
     section{
     margin: auto;
     width: 90%;
-    padding: 20px;
+    padding: 20px
 }
 
 input {

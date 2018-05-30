@@ -6,34 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  
      <section>
-    <div id="root"></div>
         <h1 class="nombre">Caesar Cipher</h1>
-        <center><p>Método de codificación más conocido y simple que cambia las posiciones del alfabeto</p></center> 
+        <p>Método de codificación más conocido y simple que cambia las posiciones del alfabeto</p> 
         <br> 
-    <form action="" name="formulario" method="get" onsubmit="return validar ();">
-      <!--Área de texto: Ingreso de datos--> 
-      <labelt>Texto a encriptar:</label><br>
-      <input type="text" name="encriptar" id="encriptar" placeholder="Ingresa tu texto">
-      <br>
-      <label>Texto a descencriptar:</label><br>
-      <input type="text" name="descencriptar" id="descencriptar" placeholder="Ingresa tu texto">
-      <br>
-      
+     <!--Área de texto: Caso de ingreso de datos--> 
+      <div>
+        <label>Ingrese el texto:</label><br>
+        <br>
+        <textarea name="encriptar" id="mensaje" placeholder="Ingresa tu texto"></textarea>
+        <br>
+      </div>  
+
       <!--Botones-->
-      <label>N° de saltos</label><br>
-      <input type="number" id="saltos" value="0">
-      <br>
-      <input type="submit" id="btnEnc" value="Encriptar"><br>
-      <input type="submit" id="btnDes" value="Descencriptar"><br>
-      <input type="reset"  id="btnLim" value="Limpiar"><br>
-      
+      <div> 
+        <label>N° de saltos</label><br>
+        <input type="number" id="saltos" value="0">
+        <br>
+        <input type="button" id="btnEnc" value="Encriptar"><br>
+        <input type="button" id="btnDes" value="Descencriptar"><br>
+        <input type="button"  id="btnLim" value="Limpiar"><br>
+      </div>
+
       <!--Área de texto: salida de datos-->
-      <label>Resultado del texto:</label><br>
-      <input type="text" name="resultado" id="resultado" placeholder="Resultado">
-    </form>
-   
+      <!--<div id="root"></div>-->
+      <div>
+        <label>Resultado del texto:</label><br>
+        <input type="text" name="resultado" id="resultado" placeholder="Resultado">
+      </div>
     <script src="index.js"></script>
     <script src="cipher.js"></script>
      </section>
