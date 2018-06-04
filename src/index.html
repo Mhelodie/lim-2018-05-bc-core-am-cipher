@@ -2,38 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-     <section>
+     <section class="ds">
         <h1 class="nombre">Caesar Cipher</h1>
-        <p>Método de codificación más conocido y simple que cambia las posiciones del alfabeto</p> 
+        <p>Método de codificación más conocido y simple que cambia las posiciones del alfabeto.</p> 
         <br> 
      <!--Área de texto: Caso de ingreso de datos--> 
-      <div>
+      <div class="ingreso">
         <label>Ingrese el texto:</label><br>
         <br>
         <textarea name="encriptar" id="mensaje" placeholder="Ingresa tu texto"></textarea>
-        <br>
       </div>  
-
-      <!--Botones-->
-      <div> 
+      <!--saltos-->
+      <div class="ingreso_2"> 
         <label>N° de saltos</label><br>
         <input type="number" id="saltos" value="0">
-        <br>
-        <input type="button" id="btnEnc" value="Encriptar"><br>
-        <input type="button" id="btnDes" value="Descencriptar"><br>
-        <input type="button"  id="btnLim" value="Limpiar"><br>
       </div>
-
+      <!--Botones-->
+      <div class="botones">
+        <button id="btnEnc">Encriptar</button>
+        <button id="btnDes">Descencriptar</button>
+        <button id="btnLim">Limpiar</button>
+      </div>
+    
       <!--Área de texto: salida de datos-->
       <!--<div id="root"></div>-->
       <div>
         <label>Resultado del texto:</label><br>
-        <input type="text" name="resultado" id="resultado" placeholder="Resultado">
+        <p id="resultado"></p>
       </div>
+
     <script src="index.js"></script>
     <script src="cipher.js"></script>
      </section>

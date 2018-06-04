@@ -1,23 +1,63 @@
 body{
     background-color: #f5f5ef;
+    font-size:180px;
   }
-p 
-{ font-size: 20px;
-  font-family: 'Courier New', Courier, monospace
-
+.ds {
+    font-size: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
 }
+
+.ingreso{
+    padding: 3%;
+    font-size: 17px;
+}
+
+.ingreso_2{
+    margin: 0px 50px 0px 0px;
+    padding: 3%;
+    width: 150px;
+}
+
+button{
+    margin: 5px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.botones
+{
+   display: flex;
+   justify-content: center;
+   padding: 3%;
+}
+
+@media only screen and ( max-width: 500px) {
+    .botones {
+        display: block;
+    }
+}
+
 .nombre{
     text-align: center;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace
-}
-    section{
-    margin: auto;
-    width: 90%;
-    padding: 20px
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1%;
 }
 
-input {
-    padding: 4px;
-    margin: 10px 0 10px 0
+p{
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1%;
+}
+
+.hola {
+overflow: center;
 }
